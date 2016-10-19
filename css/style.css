@@ -71,9 +71,11 @@ h2{
 	color: white;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	padding-bottom:30px;
+	padding: 0px 15px 30px 15px;
 	margin: 0;
-}
+	line-height: 1.1;
+	text-align: center;
+}	
 
 h3{
 	font-family: 'Fjalla One', sans-serif;
@@ -159,7 +161,7 @@ blockquote{
 }
 
 strong{
-	font-size: 36px;
+	font-size: 30px;
 	color: #c00008;
 	line-height: 2;
 }
@@ -169,7 +171,7 @@ aside{
 	text-transform: uppercase;
 	color: #c00008;
 	font-size: 24px;
-	padding-top: 10px;
+	padding: 10px 10px 0px 10px;
 }
 
 .facts{
@@ -286,9 +288,9 @@ aside{
 	top: 50%;
 	margin-top: -34px;
 	right: 50%;
-	margin-right: -125px;
+	margin-right: -133px;
 	transition: all 0.5s;
-	width: 250px;
+	width: 266px;
 	height: 68px;
 	z-index: 99;
 }
@@ -341,10 +343,10 @@ button {
 
 footer {
   background: #393939;
-  padding: 20px 0 20px;
-  text-align: left;
+  padding: 10px 0 10px;
+  text-align: center;
   color: white;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .footer{
@@ -379,12 +381,12 @@ h4{
 	position:fixed;
 	top:20%;
 	left:50%;
-	width:80%;
-	margin-left:-40%;
+	width:90%;
+	margin-left:-45%;
 	background:#fff;
 	border-radius:15px;
 	text-align:center;
-	padding:20px;
+	padding:10px;
 	-webkit-transition:top .3s;
 	transition:top .3s;
 }
@@ -410,6 +412,7 @@ h4{
 .alert-box h2{
 	color:#393939;
 	padding: 10px;
+	letter-spacing: 0px;
 }
 
 form{
@@ -512,7 +515,9 @@ nav a{
     
 }	
 
-	
+#howYouCanHelp{
+	padding: 40px 0px 40px 0px;
+}	
 	
 	
 	
@@ -527,12 +532,18 @@ nav a{
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 body{	
-	background-color: blue;
+/* 	background-color: blue; */
+font-size: 17px;
 }
 	
 h1{
 	font-size: 80px;
 }	
+		
+h2{
+	font-size: 40px;
+	padding-bottom: 15px;
+}		
 		
 .facts{
 	width: 90%;
@@ -541,9 +552,12 @@ h1{
 }	
 	
 #numbers{
-	width: 90%;
+	width: 495px;
 }
 
+.outerChar{
+	width:13%;
+}
 
 #hamburger{
 	z-index: 99999;
@@ -571,6 +585,7 @@ h1{
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
+    background-color: #ffffff;
 }
 
 .change .bar2 {opacity: 0;}
@@ -578,6 +593,7 @@ h1{
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
+    background-color: #ffffff;
 }	
 		
 		
@@ -594,8 +610,8 @@ h1{
 
 #boundary{
 	position: relative;
-	width: 200px;
-	height: 190px;
+	width: 100%;
+	height: 300px;
 	margin: 0 auto;
 }
 
@@ -611,8 +627,8 @@ h1{
 
 #socialMedia{
 	position: absolute;
-    bottom: 0px;
-    
+    bottom: 0px;    
+    width: 100%;
 }		
 		
 		
@@ -640,14 +656,24 @@ nav{
 	
 ul {
 	padding: 0;
-	margin-top: 20px;
-	background-color: orange;
+	margin-top: 40px;
+	
 }
 ul li{
-	margin-top: 20px;
-	background-color: pink;
+	margin-top: 0px;
+	text-align: center;
+	border-bottom: solid 3px #318daa;
+	background-color: white;
+	padding: 10px 5px 5px 5px;
 }
 
+nav#socialMedia{
+	margin-top: 0px;
+}
+
+nav#socialMedia img{
+	margin-right: 10px;
+}
 
 .square-content p {
 	opacity:0;
@@ -661,10 +687,82 @@ body .square-content-inner.changeP p{
 	opacity: 1;
 }
 
-button {
-  width: 75%;
+blockquote{
+	padding: 0px 20px 20px 20px
+}
+
+#roleOfSharks p{
+	width: 90%;
+}
+
+.howToHelp{
+	width:90%;
+	padding: 20px 10px 20px 10px;
+}
+
+.alert-box{
+	width:90%;
+	margin-left:-45%;
+	padding:10px;
 }
 
 
 
+
+
+
+
+
+
+
 }
+
+@media only screen and (max-width : 520px) {
+h1{
+	font-size: 70px;
+}		
+#numbers{
+	width: 400px;
+}
+.outerChar{
+	padding: 15px 6px 10px 6px;
+	width:13%;
+}
+
+#submit-button {
+  width: 220px;
+}
+
+button#shareButton {
+  width: 220px;
+}
+
+#share{
+	background-color: #c00008;
+	padding: 40px 20px;
+}
+
+	
+}	
+
+@media only screen and (max-width : 400px) {
+h1{
+	font-size: 50px;
+}		
+
+.alert-box h2{
+	color:#393939;
+	padding: 10px;
+	font-size: 30px;
+}
+
+#numbers{
+	width: 300px;
+}
+.outerChar{
+	padding: 15px 6px 10px 6px;
+	width:13%;
+}
+	
+}
+	
