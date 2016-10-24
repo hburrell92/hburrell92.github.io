@@ -147,6 +147,13 @@ cursor: pointer;
 	background-color: #62c2e8;
 }
 
+#topQuoteContact{
+	padding-top: 40px;
+	background-color: #62c2e8;
+	padding-bottom: 30px;
+}
+
+
 blockquote{
 	font-family: 'Fjalla One', sans-serif;
 	font-size: 30px;
@@ -318,6 +325,11 @@ button {
  
 }
 
+button:hover {
+	background-color: #1881a8;
+
+}
+
 #howYouCanHelp{
 	display: block;	
 	background: url(../images/waterBG.JPG) no-repeat top center #131e27;
@@ -379,14 +391,14 @@ h4{
 
 .alert-box{
 	position:fixed;
-	top:20%;
+	top:15%;
 	left:50%;
 	width:90%;
 	margin-left:-45%;
 	background:#fff;
 	border-radius:15px;
 	text-align:center;
-	padding:10px;
+	padding:10px 10px 15px 10px;
 	-webkit-transition:top .3s;
 	transition:top .3s;
 }
@@ -439,8 +451,30 @@ input{
 	font-size: 18px;
 	text-transform: uppercase;
 	}
+	
+textarea{
+	color:#393939;
+	background-color: #e0e0e0;
+	width: 100%;
+	padding: 10px;
+	border-radius: 5px;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 18px;
+	text-transform: uppercase;
+	overflow: scroll;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    margin-bottom: 10px;
+}	
 
-#submit-button {
+#contactForm{
+	width: 90%;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+.submit-button {
   border-radius: 5px;
   border: 0;
   width: 250px;
@@ -455,10 +489,24 @@ input{
   text-transform: uppercase;
   background-color: #00acec;
   border-bottom: 4px solid #1b5d72;
-  margin-top: 20px;
+  margin-top: 10px;
+}
+
+.submit-button:hover {
+	background-color: #1881a8;
 }
 
 
+
+
+#linksLogos{
+	display: inline-block;
+	max-width: 900px;
+}
+
+.linksLogosInner{
+	padding-top: 20px;
+}
 
 
 
@@ -519,6 +567,10 @@ nav a{
 	padding: 40px 0px 40px 0px;
 }	
 	
+	
+.col-sm-push-6{
+	text-align: left;
+}	
 	
 	
 
@@ -703,13 +755,17 @@ blockquote{
 .alert-box{
 	width:90%;
 	margin-left:-45%;
-	padding:10px;
+	padding:10px 10px 15px 10px;
 }
 
 
 
 
 
+#linksLogos{
+	display: inline-block;
+	max-width: 500px;
+}
 
 
 
@@ -729,7 +785,7 @@ h1{
 	width:13%;
 }
 
-#submit-button {
+.submit-button {
   width: 220px;
 }
 
